@@ -1,0 +1,21 @@
+name: Invoke CI pipeline
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "**"
+jobs:
+  run-mac:
+    runs-on: macos-13
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run MacOS
+        run: |
+          sleep 60
+  run-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Windows
+        run: |
+          sleep 60
