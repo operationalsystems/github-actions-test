@@ -12,6 +12,7 @@ jobs:
       - name: Run MacOS
         run: |
           sleep 60
+          echo 'hello'
   run-linux:
     runs-on: ubuntu-latest
     steps:
@@ -19,3 +20,4 @@ jobs:
       - name: Run Windows
         run: |
           sleep 60
+          echo 'hello'
